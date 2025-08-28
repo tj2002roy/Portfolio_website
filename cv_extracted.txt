@@ -1,0 +1,65 @@
++91-9641403758 |      turjo.roy@uem.edu.inTURJO ROY
+COMPUTER SCIENCE ENGINEER & RESEARCH ASSOCIATE
+UNIVERSITY OF ENGINEERING & MANAGEMENT, JAIPUR
+Areas of Interest: Artificial Intelligence, IoT, Automation, Hardware Security and Trust, Machine Learning, PLC
+Programming, Embedded Programming (Embedded C), Bare Metal Programming.TECHNICAL SKILLS and INTERESTS
+Developer Tools: Visual Studio, Arduino IDE, PyCharm, Arduino Cloud, Google Colab, JAVA, C++, Python, C,
+Linux OS, Jupyter Lab, Tinkercad, Figma, Wordpress, Canva, Flux AI, Adobe Photoshop, Fusion 360, Easy EDA,
+MS Office.
+Soft Skills: Public Speaking, Communication, Leadership, Project Management, Multi-tasking, Creativity,
+Problem Solving.EDUCATION
+-University of Engineering & Management, Jaipur                                                                                            2021-2025
+Computer Science and Engineering - AIML                                                                                                           CGPA: 7.44
+-Jalpaiguri Fanindra Deb Institution(FDI)                                                                                                                       2021
+West Bengal Council of Higher Secondary Education (WBCHSE) (10+2)                                                  Percentage: 78.4
+-Jalpaiguri Fanindra Deb Institution(FDI)                                                                                                                       2019
+West Bengal Board of Secondary Education (WBBSE) (10)                                                                         Percentage: 86.0
+EXPERIENCES
+Engaged in close observation of the programming process, circuit building and understanding working principle(s) of
+the micro-controllers like arduino Dev-Boards, ESP32 Dev- Boards, STM controllers.
+In collaboration with seniors and colleagues, I hosted two weeks hands-on workshop at JECRC College (Jaipur) and D.
+Y.  Patil college of Engineering (Pune).-Training and Internship
+  IEMLabs (IEMA RESEARCH & DEVELOPMENT Pvt. Ltd.)                 2nd Feb  - 3rd March (2023)
+                                      onsite
+ Department of Computer Science Engineering, IIT Bhilai                
+Developed and implemented  the concepts of Internet of Things(IoT) and Hardware Security and Trust by developing
+the encryption/decryption Algorithm and performing EM Side-channel Attack on Low Level Micro-controllers and
+Programmable Logic Controller(PLC).15th May - 13th August (2024)
+                                        Hybrid
+CERTIFICATIONS
+The Joy of Computing using Python (IIT Madras)
+Introduction To Internet Of Things (IITKGP)
+Software Testing (IITKGP)
+Fundamental Algorithms: Design And Analysis (IITKGP)-NPTEL (Funded by MoE, Govt. of India)
+-IITD-AIA Foundation For Smart Manufacturing(IAFSM)
+3 days Training Program Attend Certificate on “Smart Manufacturing & Industry 4.0”      Ref. No. : IAFSM/UEM/04
+-Innovation, Incubation, & Entrepreneurship Development Cell(IIEDC)
+ University of Engineering & Management, Jaipur
+Served as President-Student Affairs  during the academic year 2022-2025.
+POSITIONS OF RESPONSIBILITY
+-President, Entrepreneurship Cell University of Engineering & Management Jaipur                           2023-2024
+Served as Student President of E-Cell UEM Jaipur, overseeing events, team management,  administration, and fostering
+collaborations with other institutes pan India.
+-Technical Head, Entrepreneurship Cell University of Engineering & Management Jaipur                2022-2023
+Served as Technical Head of E-Cell UEM Jaipur, managing all the technical aspects related to the cell with a team of 10+
+persons-Founder, TECXARO and Co. (UDYAM-RJ-50-0010149)                                                                         2023-Ongoing
+Founded the venture with the IEM-UEM Incubation ecosystem for startup with a total member of 15 people. -Research Associate, Department of Computer Applications, IEM-UEM Group                               2025-Ongoing          
+Joined University of Engineering & Management, Jaipur as Research Associate (Faculty).
+EXTRA-CURRICULAR ACTIVITIES
+-Graphic designing
+-Music Editing with Digital Audio Workstation software (DAW’s)
+-Participating in Different Tech-fests for Hackathons and Robotics (e.g. Robowar, Robo-soccer, Robo-sumo etc.) Competitions
+with my Team
+-Mentoring
+-Conduct Seminar, Webinar on IoT, Automation
+LANGUAGES
+-English, Hindi, Nepali, Assamese, Bengali (Native)PROJECTS
+Project 1: Artificial Lighting Agriculture for Plants (ALAP).
+Project 2: Solving real-life Traveling Salesmen Problems with Ant Colony Optimization Algorithm.
+Project 3: Comparative Analysis of Medical Data Using Clustering Techniques applied by the Multi Criteria Decision
+Analysis Technique (MCDA).
+Project 4: Electromagnetic Side Channel Attack with Machine Learning Techniques for the Advanced Encryption
+Standard On low-end computational devices and PLC.
+Project 5: VELOXIS (Universal Automated Mobility Vehicle for Specially Aided person).
+Project 6: (ZEN-HOME) Development of an affordable and user-friendly smart home automation system that
+prioritises voice control By combining Low-Level Micro-controllers.
