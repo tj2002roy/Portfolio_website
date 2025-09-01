@@ -352,14 +352,48 @@ html { scroll-padding-top: 80px; }
 .intro-photo.active .intro-photo-img { transform: scale(1.02); opacity: 1; }
 
 /* Pinned avatar state */
-.intro-photo.pinned { position: fixed; top: 12px; right: 92px; left: auto; bottom: auto; width: auto; height: auto; opacity: 1; transform: none; pointer-events: none; transition: opacity 2.5s ease, transform .7s cubic-bezier(.2,.8,.2,1); }
+.intro-photo.pinned { 
+    position: fixed; 
+    top: 50%; 
+    right: 92px; 
+    left: auto; 
+    transform: translateY(-50%); 
+    width: auto; 
+    height: auto; 
+    opacity: 1; 
+    pointer-events: none; 
+    transition: opacity 2.5s ease, transform .7s cubic-bezier(.2,.8,.2,1); 
+}
 .intro-photo.pinned .intro-photo-bg { opacity: 0; }
-.intro-photo.pinned .intro-photo-img { width: 56px; height: 56px; border-radius: 12px; box-shadow: 0 12px 28px rgba(0,0,0,.25); transform: none; }
+.intro-photo.pinned .intro-photo-img { 
+    width: 44px; 
+    height: 44px; 
+    border-radius: 10px; 
+    box-shadow: 0 12px 28px rgba(0,0,0,.25); 
+    transform: none; 
+}
 
 /* Hidden pin (faded out) */
 .intro-photo.pin-hidden { opacity: 0; }
 
 @media (max-width: 768px) {
-	.intro-photo.pinned { top: 10px; right: 76px; }
-	.intro-photo.pinned .intro-photo-img { width: 48px; height: 48px; }
+    .intro-photo.pinned { 
+        top: 50%;
+        right: 76px;
+        transform: translateY(-50%);
+    }
+    .intro-photo.pinned .intro-photo-img { 
+        width: 36px; 
+        height: 36px;
+        border-radius: 8px;
+    }
+    
+    /* Adjust navbar height for better mobile layout */
+    .navbar {
+        height: 64px;
+    }
+    .nav-container {
+        height: 100%;
+        align-items: center;
+    }
 }
