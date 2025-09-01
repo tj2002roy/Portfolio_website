@@ -66,51 +66,7 @@ const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').mat
 	});
 })();
 
-// Intro Photo behavior with GSAP timeline
-(function introPhotoBehavior(){
-	const intro = document.querySelector('.intro-photo');
-	if (!intro) return;
-	if (prefersReduced) { intro.remove(); return; }
-	const bg = intro.querySelector('.intro-photo-bg');
-	const img = intro.querySelector('.intro-photo-img');
 
-	// Blur first, then photo
-	intro.classList.add('active');
-	requestAnimationFrame(() => {
-		const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-		tl.fromTo(bg, { opacity: 0 }, { opacity: 1, duration: 0.45 }, 0)
-			.fromTo(intro, { opacity: 0, y: 12, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.65 }, 0)
-			.fromTo(img, { opacity: 0, scale: 0.99 }, { opacity: 1, scale: 1.02, duration: 0.8 }, 0.05);
-	});
-
-	let pinned = false;
-	let hideTimeout = null;
-	function fadePinLater() {
-		// The actual fade-out duration is controlled via CSS (2.5s). This timeout starts the fade.
-		if (hideTimeout) clearTimeout(hideTimeout);
-		hideTimeout = setTimeout(() => { intro.classList.add('pin-hidden'); }, 1400);
-	}
-	function showPinIfTop() { if (window.scrollY === 0) intro.classList.remove('pin-hidden'); }
-
-	function collapse() {
-		if (pinned) return;
-		pinned = true;
-		const tl = gsap.timeline({ defaults: { ease: 'power3.inOut' } });
-		tl.to(bg, { opacity: 0, duration: 0.4 }, 0)
-			.to(intro, { y: -20, duration: 0.4 }, 0)
-			.to(img, { scale: 1, duration: 0.5 }, 0)
-			.add(() => { intro.classList.add('pinned'); fadePinLater(); });
-	}
-
-	const onFirstScroll = () => { if (window.scrollY > 10) { collapse(); window.removeEventListener('scroll', onFirstScroll); } };
-	window.addEventListener('scroll', onFirstScroll, { passive: true });
-	document.addEventListener('wheel', collapse, { once: true, passive: true });
-	document.addEventListener('touchstart', collapse, { once: true, passive: true });
-
-	// Re-appear pin only at very top
-	window.addEventListener('scroll', showPinIfTop, { passive: true });
-	window.addEventListener('hashchange', showPinIfTop);
-})();
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
