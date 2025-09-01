@@ -3,9 +3,5 @@
   "name": "turjo-portfolio",
   "public": true,
   "cleanUrls": true,
-  "trailingSlash": false,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/$1" }
-  ]
+  "trailingSlash": false
 }

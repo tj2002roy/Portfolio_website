@@ -1,6 +1,42 @@
 // Initialize GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
+// EmailJS init and handler
+(function emailjsInit(){
+	try {
+		if (window.emailjs) {
+			const form = document.getElementById('contactForm');
+			if (form && form.dataset.emailjs === 'true') {
+				const publicKey = form.dataset.emailjsPublicKey;
+				const serviceId = form.dataset.emailjsService;
+				const templateId = form.dataset.emailjsTemplate;
+				if (publicKey) emailjs.init(publicKey);
+				form.addEventListener('submit', async (e) => {
+					e.preventDefault();
+					const submitBtn = form.querySelector('button[type="submit"]');
+					if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; }
+					const formData = {
+						name: form.name.value,
+						email: form.email.value,
+						subject: form.subject.value,
+						message: form.message.value
+					};
+					try {
+						await emailjs.send(serviceId, templateId, formData);
+						alert('Message sent successfully!');
+						form.reset();
+					} catch (err) {
+						console.error(err);
+						alert('Failed to send message. Please try again later.');
+					} finally {
+						if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Send Message'; }
+					}
+				});
+			}
+		}
+	} catch (e) { console.warn('EmailJS init skipped', e); }
+})();
+
 // Set dynamic year
 (function setYear(){ try{ var y=document.getElementById('year'); if(y){ y.textContent=new Date().getFullYear(); } }catch(e){} })();
 

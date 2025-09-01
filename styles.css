@@ -144,8 +144,8 @@ html.dark .footer { background: #07080c; }
 
 /* Signature in footer */
 .footer-signature { width: 100%; display: flex; justify-content: center; margin: 1rem 0 0.5rem 0; }
-.footer-signature img { max-width: 220px; width: 60%; height: auto; filter: invert(0); opacity: 0.9; }
-html.dark .footer-signature img { filter: invert(1) brightness(1.2); opacity: 0.85; }
+.footer-signature img { max-width: 220px; width: 60%; height: auto; opacity: 0.95; }
+html.dark .footer-signature img { filter: none; opacity: 0.95; }
 @media (min-width: 768px) { .footer-signature img { width: 320px; } }
 
 /* Responsive */

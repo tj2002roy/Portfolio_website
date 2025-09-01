@@ -23,6 +23,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Intro Photo Overlay -->
@@ -264,11 +266,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-                        <input type="hidden" name="form-name" value="contact">
-                        <p style="display:none;">
-                            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-                        </p>
+                    <form id="contactForm" data-emailjs="true" data-emailjs-service="service_v7tu8f3" data-emailjs-template="template_57ctcvu" data-emailjs-public-key="p_iiLzsmCPX02v609">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
@@ -292,8 +290,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <span>Turjo Roy</span>
+                <div class="footer-logo footer-signature">
+                    <img src="images/signature.png" alt="Turjo Roy signature" />
                 </div>
                 <div class="footer-links">
                     <a href="#home">Home</a>
